@@ -4,31 +4,28 @@
 - Name: Harry Fisher
 - Student ID: 1082897
 
-## Student Instructions
-You **must** write up `README.md` for this repository to be eligable for readability marks.
+Research Goal: My research goal to analyse the effects of shootings on taxi demand (number of trips per hour).
 
-1. Students must keep all Jupyter Notebooks in the `notebooks` directory.
-2. Students must keep all `.py` scripts under the `scripts` directory. These can include helper functions and modules with relevant `__init__.py`
-3. Students must store all raw data downloaded (using a Python script) in the `data/raw` folder. This will be in the `.gitignore` so **do not upload any raw data files whatsoever**.
-4. Students must store all curated / transformed data in the `data/curated` folder. This will be in the `.gitignore` so **do not upload any raw data files whatsoever**. We will be running your code from the `scripts` directory to regenerated these.
-5. All plots must be saved in the `plots` directory.
-6. Finally, your report `.tex` files must be inside the `report` directory. If you are using overleaf, you can download the `.zip` and extract it into this folder.
-7. Add your name and Student ID to the fields above.
-8. Add your relevant `requirements.txt` to the root directory. If you are unsure, run `pip3 list --format=freeze > requirements.txt` (or alternative) and copy the output to the repository.
-9. You may delete all `.gitkeep` files if you really want to. These were used to ensure empty directories could be pushed to `git`.
-10. When you have read this, delete the `Student Instructions` section to clean the readme up.
+Timeline: The timeline for the research area is 2016-2019.
 
-Remember, we will be reading through and running your code, so it is in _your best interest_ to ensure it is readable and efficient.
+The first note is that the commits from my original repositary couldn't be pushed. To resolve the issue, the repo was cloned and already completed files were copied, committed and pushed to the origin so they could be accessed via GitHub.
 
-## README example
-This is an example `README.md` for students to use. **Please change this to your requirements**.
-
-**Research Goal:** My research goal is tip analysis for credit card payments
-
-**Timeline:** The timeline for the research area is 2018 - 2021.
-
-To run the pipeline, please visit the `scripts` directory and run the files in order:
+To run the pipeline, please first visit the `scripts` directory and run the file:
 1. `download.py`: This downloads the raw data into the `data/landing` directory.
-2. `preprocess.ipynb`: This notebook details all preprocessing steps and outputs it to the `data/raw` and `data/curated` directory.
-3. `analysis.ipynb`: This notebook is used to conduct analysis on the curated data.
-4. `model.py` and `model_analysis.ipynb`: The script is used to run the model from CLI and the notebook is used for analysing and discussing the model.
+Note in this section I had to manually upload data. My tutor Lucas Fern said it was ok. This was because the API limited the download to 1000 instances. The 'shooting_data.csv' shoould be used instead of 'shooting_data_1000.csv' as it contains the full dataset.
+2. From the PreReq notebook in tutorial 1, there was the 'Taxi_Zones` folder containing relevant information for this project. Place it manually into the data directory - like this: 'data/taxi_zones'
+
+Next in the pipeline, navigate to the 'notebooks' directory and run the files in order:
+3. 'Preprocessing_Yellow_Taxi_Data.ipynb'
+4. 'Preprocessing_Shooting.ipynb'
+5. 'Visualising_Shooting_Data.ipynb' 
+6. 'Shooting_Taxi_PreProcessing_Part1.ipynb'
+7. 'Shooting_Taxi_PreProcessing_Part2.ipynb'
+8. 'Shooting_Taxi_PreProcessing_Part3.ipynb'
+
+Once the preprocessing is done, stay in the 'notebooks' directory. These next notebooks conduct the analysis and run the models. To continue along in the pipeline run the files in this order.
+9. 'Visualising_Taxi_Geo.ipynb'
+10. 'Models.ipynb'
+11. 'Models_Plot_Results.ipynb'
+12. 'Visualising_taxi_shooting-Part1.ipynb'
+13. 'Visualising_taxi_shooting-Part2.ipynb'
