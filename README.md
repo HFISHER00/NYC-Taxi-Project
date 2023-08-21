@@ -8,7 +8,7 @@ Research Goal: My research goal to analyse the effects of shootings on taxi dema
 
 Timeline: The timeline for the research area is 2016-2019.
 
-The first note is that the commits from my original repositary couldn't be pushed. To resolve the issue, the repo was cloned and already completed files were copied, committed and pushed to the origin so they could be accessed via GitHub.
+The first note is that the commits from my original repositary couldn't be pushed. To resolve the issue, the repo was cloned and already completed files were copied, committed and pushed to the origin so they could be accessed via GitHub. If you need proof the original commits are stuck on my GitDesktop.
 
 To run the pipeline, please first visit the `scripts` directory and run the file:
 1. `download.py`: This downloads the raw data into the `data/landing` directory.
