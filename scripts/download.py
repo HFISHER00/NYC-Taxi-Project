@@ -99,6 +99,3 @@ url = ('https://data.cityofnewyork.us/resource/833y-fsy8.csv?$query=SELECT%0A'
 # Download the data
 urllib.request.urlretrieve(url, '../data/landing/shooting_data_1000.csv')
 print("Data downloaded successfully.")
- 
-
-
